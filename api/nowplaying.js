@@ -8,7 +8,7 @@ import net from 'node:net';
 
 // Sites allowed to call this from a browser. Override with the ALLOWED_ORIGINS
 // env var (comma separated) in the Vercel dashboard.
-const ALLOWED = (process.env.ALLOWED_ORIGINS || 'https://theokano.neocities.org')
+const ALLOWED = (process.env.ALLOWED_ORIGINS || 'https://theokano.neocities.org,https://wlsdxm.github.io')
   .split(',').map((s) => s.trim()).filter(Boolean);
 
 const MAX_REDIRECTS = 3;
